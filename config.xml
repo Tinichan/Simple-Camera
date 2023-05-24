@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.timgonch.simplecamera" version="0.0.5" xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name short="Camera">Simple Camera</name>
+    <description>Simple Camera for everyone</description>
+    <author email="timgonchwork@gmail.com" href="https://tinichan.github.io/My-site/">
+        Tim Gonch
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <plugin name="cordova-plugin-camera-preview" spec="~0.12.7" />
+    <platform name="android">
+        <icon background="res/icon/android/ldpi-background.png" density="ldpi"
+            foreground="res/icon/android/ldpi-foreground.png" />
+        <icon background="res/icon/android/mdpi-background.png" density="mdpi"
+            foreground="res/icon/android/mdpi-foreground.png" />
+        <icon background="res/icon/android/hdpi-background.png" density="hdpi"
+            foreground="res/icon/android/hdpi-foreground.png" />
+        <icon background="res/icon/android/xhdpi-background.png" density="xhdpi"
+            foreground="res/icon/android/xhdpi-foreground.png" />
+        <icon background="res/icon/android/xxhdpi-background.png" density="xxhdpi"
+            foreground="res/icon/android/xxhdpi-foreground.png" />
+        <icon background="res/icon/android/xxxhdpi-background.png" density="xxxhdpi"
+            foreground="res/icon/android/xxxhdpi-foreground.png" />
+    </platform>
+    <!-- <platform name="ios">
+
+    </platform> -->
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+    </feature>
+
+</widget>

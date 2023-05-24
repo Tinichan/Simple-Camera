@@ -1,0 +1,43 @@
+{
+  "name": "io.cordova.hellocordova",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^10.1.2",
+    "cordova-plugin-camera-preview": "github:cordova-plugin-camera-preview/cordova-plugin-camera-preview",
+    "cordova-plugin-file": "^7.0.0",
+    "cordova-plugin-filepath": "^1.6.0",
+    "cordova-plugin-geolocation": "^4.1.0",
+    "cordova-plugin-media": "^6.1.0",
+    "cordova-plugin-screen-orientation": "^3.0.3",
+    "es6-promise-plugin": "^4.2.2"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-camera-preview": {},
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "true"
+      },
+      "cordova-plugin-file": {},
+      "cordova-plugin-filepath": {},
+      "cordova-plugin-screen-orientation": {},
+      "cordova-plugin-media": {}
+    }
+  },
+  "dependencies": {
+    "exif-js": "^2.3.0"
+  }
+}
